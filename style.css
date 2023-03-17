@@ -15,3 +15,7 @@
 .display {
     grid-column: span 4; 
 }
+
+.number0 {
+    grid-row-start: 5; /* this is to set it to the right cell */
+}

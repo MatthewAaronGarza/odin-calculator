@@ -32,3 +32,39 @@
   grid-row-end: span 2;
   height: 207px;
 }
+
+.number1 {
+    grid-row-start: 5;
+}
+
+.number2 {
+    grid-row-start: 5;
+}
+
+.number3 {
+    grid-row-start: 5;
+}
+
+.number4 {
+    grid-row-start: 4;
+}
+
+.number5 {
+    grid-row-start: 4;
+}
+
+.number6 {
+    grid-row-start: 4;
+}
+
+.number7 {
+    grid-row-start: 3;
+}
+
+.number8 {
+    grid-row-start: 3;
+}
+
+.number9 {
+    grid-row-start: 3;
+}

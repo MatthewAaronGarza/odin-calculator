@@ -11,6 +11,9 @@
 
 .cell {
     height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .display {
@@ -57,6 +60,10 @@
     grid-row-start: 4;
 }
 
+.add {
+    grid-row-start: 4;
+}
+
 .number7 {
     grid-row-start: 3;
 }
@@ -68,3 +75,21 @@
 .number9 {
     grid-row-start: 3;
 }
+
+.subtract {
+    grid-row-start: 3;
+}
+
+.clear {
+    grid-column: span 2;
+}
+
+.multiply {
+    grid-column-start: 4;
+}
+
+.divide {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+

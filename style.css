@@ -5,8 +5,13 @@
 #grid-container {
     display: grid;
     grid-template-columns: repeat(4, 100px);
+    justify-content: center;
 }
 
 .cell {
     height: 100px;
+}
+
+.display {
+    grid-column: span 4; 
 }

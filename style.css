@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: repeat(4, 100px);
     justify-content: center;
+    gap: 5px;
 }
 
 .cell {
@@ -17,6 +18,17 @@
 }
 
 .number0 {
-    grid-row-start: 5; /* this is to set it to the right cell */
+    grid-row-start: 6; /* this is to set it to the right cell */
+    grid-column: span 2;
 }
 
+.decimal {
+    grid-row-start: 6;
+}
+
+.equals {
+  grid-column-start: 4;
+  grid-row-start: 5;
+  grid-row-end: span 2;
+  height: 207px;
+}

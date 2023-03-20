@@ -8,16 +8,22 @@ function add (num1, num2) {
 }
 
 function subtract (num1, num2) {
+    num1 = Number(num1)
+    num2 = Number(num2)
     let difference = num1 - num2
     return difference
 }
 
 function multiply (num1, num2) {
+    num1 = Number(num1)
+    num2 = Number(num2)
     let product = num1 * num2
     return product
 }
 
 function divide (num1, num2) {
+    num1 = Number(num1)
+    num2 = NUmber(num2)
     let quotient = num1 / num2
     return quotient
 }
@@ -166,6 +172,8 @@ equalsButton.addEventListener("click", () => {
 
         display.textContent = numToDisplay
     }
+
+
 
     // after returning an answer we need to set all the operators to false
     addButtonPressed = false

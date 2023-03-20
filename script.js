@@ -23,7 +23,7 @@ function multiply (num1, num2) {
 
 function divide (num1, num2) {
     num1 = Number(num1)
-    num2 = NUmber(num2)
+    num2 = Number(num2)
     let quotient = num1 / num2
     return quotient
 }

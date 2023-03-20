@@ -179,6 +179,19 @@ subButton.addEventListener("click", () => {
 
 })
 
+let mulButton = document.querySelector(".multiply")
+
+mulButton.addEventListener("click", () => {
+
+    numberInDisplay1 = display.textContent
+
+    display.textContent = ''
+
+    mulButtonPressed = true
+
+})
+
+
 
 
 let equalsButton = document.querySelector(".equals")
@@ -199,7 +212,12 @@ equalsButton.addEventListener("click", () => {
 
         display.textContent = numToDisplay
 
-    }
+    } else if (mulButtonPressed == true) {
+
+        let numToDisplay = multiply(numberInDisplay1, numberInDisplay2)
+
+        display.textContent = numToDisplay
+    } 
 
     // after returning an answer we need to set all the operators to false
     addButtonPressed = false

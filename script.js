@@ -188,14 +188,16 @@ equalsButton.addEventListener("click", () => {
 
     numberInDisplay2 = display.textContent
 
-    if (addButtonPressed = true) {
+    if (addButtonPressed == true) {
 
         let numToDisplay = add(numberInDisplay1, numberInDisplay2)
 
         display.textContent = numToDisplay
-    } else if (subButtonPressed = true) {
+    } else if (subButtonPressed == true) {
 
-        let numToDisplay = sub(numberInDisplay1, numberInDisplay2)
+        let numToDisplay = subtract(numberInDisplay1, numberInDisplay2)
+
+        display.textContent = numToDisplay
 
     }
 

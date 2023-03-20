@@ -138,8 +138,6 @@ clear.addEventListener("click", () => {
 })
 
 
-
-
 // we need the var to be global to be accessed by the equals button
 
 let numberInDisplay1 = ''
@@ -149,8 +147,6 @@ let addButtonPressed = false
 let subButtonPressed = false
 let mulButtonPressed = false
 let divButtonPressed = false
-
-
 
 
 let addButton = document.querySelector(".add")
@@ -170,6 +166,21 @@ addButton.addEventListener("click", () => {
     
 })
 
+let subButton = document.querySelector(".subtract")
+
+subButton.addEventListener("click", () => {
+
+    numberInDisplay1 = display.textContent
+    
+    // after saving the numberToAdd we need to clear the display again
+    display.textContent = ''
+    
+    subButtonPressed = true
+
+})
+
+
+
 let equalsButton = document.querySelector(".equals")
 
 equalsButton.addEventListener("click", () => {
@@ -182,10 +193,11 @@ equalsButton.addEventListener("click", () => {
         let numToDisplay = add(numberInDisplay1, numberInDisplay2)
 
         display.textContent = numToDisplay
+    } else if (subButtonPressed = true) {
+
+        let numToDisplay = sub(numberInDisplay1, numberInDisplay2)
+
     }
-
-
-
 
     // after returning an answer we need to set all the operators to false
     addButtonPressed = false

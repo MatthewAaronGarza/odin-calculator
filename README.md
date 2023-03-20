@@ -15,3 +15,7 @@ Things to look out for:
 - what happens if the user enters: "+ 5 +" ?
 - what happens if the user enters: "5 + 5 +" ?
     - this seems like we should add functionality so that the calculator starts addign the 5s for the user
+
+TODO:
+- figure out why the add function is being called when you are clicking on subtract button 
+    - why is the breakpoint stopping on the add function when we are clicking on the subtract button

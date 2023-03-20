@@ -89,9 +89,14 @@ num9.addEventListener("click", () => {
 })
 
 
+let decimal = document.querySelector('.decimal')
 
+decimal.addEventListener("click", () => {
+    addNumber(decimal)
+})
 
 function addNumber(numToAdd) {
     let valueToAdd = numToAdd.textContent
     display.append(valueToAdd)
 }
+

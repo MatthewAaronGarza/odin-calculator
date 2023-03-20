@@ -20,3 +20,20 @@ function divide (num1, num2) {
     return quotient
 }
 
+// we're making the var for the display div
+let display = document.querySelector('.display')
+
+// now we want to make a eventlistener for click, that adds
+// the number to the display document using the append to div
+
+
+let num0 = document.querySelector('.number0')
+
+num0.addEventListener("click", () => {
+    addNumber(num0)
+})
+
+function addNumber(numToAdd) {
+    let valueToAdd = numToAdd.textContent
+    display.append(valueToAdd)
+}

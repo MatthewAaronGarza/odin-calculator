@@ -112,3 +112,15 @@ function addNumber(numToAdd) {
     display.append(valueToAdd)
 }
 
+// we want to add functionality to the clear button
+
+let clear = document.querySelector(".clear")
+
+clear.addEventListener("click", () => {
+
+    // we need to clear whatever is in the display here
+
+    display.textContent = ''
+
+})
+

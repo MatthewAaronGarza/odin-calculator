@@ -33,6 +33,64 @@ num0.addEventListener("click", () => {
     addNumber(num0)
 })
 
+
+let num1 = document.querySelector('.number1')
+
+num1.addEventListener("click", () => {
+    addNumber(num1)
+})
+
+let num2 = document.querySelector('.number2')
+
+num2.addEventListener("click", () => {
+    addNumber(num2)
+})
+
+let num3 = document.querySelector('.number3')
+
+num3.addEventListener("click", () => {
+    addNumber(num3)
+})
+
+let num4 = document.querySelector('.number4')
+
+num4.addEventListener("click", () => {
+    addNumber(num4)
+})
+
+let num5 = document.querySelector('.number5')
+
+num5.addEventListener("click", () => {
+    addNumber(num5)
+})
+
+let num6 = document.querySelector('.number6')
+
+num6.addEventListener("click", () => {
+    addNumber(num6)
+})
+
+let num7 = document.querySelector('.number7')
+
+num7.addEventListener("click", () => {
+    addNumber(num7)
+})
+
+let num8 = document.querySelector('.number8')
+
+num8.addEventListener("click", () => {
+    addNumber(num8)
+})
+
+let num9 = document.querySelector('.number9')
+
+num9.addEventListener("click", () => {
+    addNumber(num9)
+})
+
+
+
+
 function addNumber(numToAdd) {
     let valueToAdd = numToAdd.textContent
     display.append(valueToAdd)

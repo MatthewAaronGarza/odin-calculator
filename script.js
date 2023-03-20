@@ -1,6 +1,8 @@
 // lets start with making functions that we are going to be using 
 
 function add (num1, num2) {
+    num1 = Number(num1)
+    num2 = Number(num2)
     let sum = num1 + num2
     return sum
 }
@@ -124,3 +126,50 @@ clear.addEventListener("click", () => {
 
 })
 
+// we need the var to be global to be accessed by the equals button
+
+let numberInDisplay1 = ''
+let numberInDisplay2 = ''
+
+let addButtonPressed = false
+let subButtonPressed = false
+let mulButtonPressed = false
+let divButtonPressed = false
+
+
+let addButton = document.querySelector(".add")
+
+addButton.addEventListener("click", () => {
+
+    // we need to add functionality to the add button here
+    // also make the div background color change to let user know
+    // they selected the add button
+
+    numberInDisplay1 = display.textContent
+    
+    // after saving the numberToAdd we need to clear the display again
+    display.textContent = ''
+    addButtonPressed = true
+
+})
+
+let equalsButton = document.querySelector(".equals")
+
+equalsButton.addEventListener("click", () => {
+
+
+    numberInDisplay2 = display.textContent
+
+    if (addButtonPressed = true) {
+
+        let numToDisplay = add(numberInDisplay1, numberInDisplay2)
+
+        display.textContent = numToDisplay
+    }
+
+    // after returning an answer we need to set all the operators to false
+    addButtonPressed = false
+    subButtonPressed = false
+    mulButtonPressed = false
+    divButtonPressed = false
+})

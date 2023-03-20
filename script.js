@@ -132,6 +132,9 @@ clear.addEventListener("click", () => {
 
 })
 
+
+
+
 // we need the var to be global to be accessed by the equals button
 
 let numberInDisplay1 = ''
@@ -141,6 +144,8 @@ let addButtonPressed = false
 let subButtonPressed = false
 let mulButtonPressed = false
 let divButtonPressed = false
+
+
 
 
 let addButton = document.querySelector(".add")
@@ -172,6 +177,7 @@ equalsButton.addEventListener("click", () => {
 
         display.textContent = numToDisplay
     }
+    
 
 
 

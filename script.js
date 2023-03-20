@@ -163,28 +163,14 @@ addButton.addEventListener("click", () => {
 
     // first we want to check if the addButtonPressed is already true
 
-    if (addButtonPressed = true) {
-
-        // if they already pressed the add button add the logic for that here:
-        numberInDisplay2 = display.textContent
         
-        // since the button was already pressed before we know that numberInDisplay1
-        // already holds data
-
-        // copied from the equals button
-        let numToDisplay = add(numberInDisplay1, numberInDisplay2)
-
-        display.textContent = numToDisplay
-
-    } else {
-        
-        numberInDisplay1 = display.textContent
+    numberInDisplay1 = display.textContent
     
-        // after saving the numberToAdd we need to clear the display again
-        display.textContent = ''
+    // after saving the numberToAdd we need to clear the display again
+    display.textContent = ''
     
-        addButtonPressed = true
-    }
+    addButtonPressed = true
+    
 
 })
 

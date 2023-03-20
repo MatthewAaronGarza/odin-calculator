@@ -161,9 +161,6 @@ addButton.addEventListener("click", () => {
     // also make the div background color change to let user know
     // they selected the add button
 
-    // first we want to check if the addButtonPressed is already true
-
-        
     numberInDisplay1 = display.textContent
     
     // after saving the numberToAdd we need to clear the display again
@@ -171,7 +168,6 @@ addButton.addEventListener("click", () => {
     
     addButtonPressed = true
     
-
 })
 
 let equalsButton = document.querySelector(".equals")

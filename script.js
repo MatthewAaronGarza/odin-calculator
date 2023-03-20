@@ -92,8 +92,20 @@ num9.addEventListener("click", () => {
 let decimal = document.querySelector('.decimal')
 
 decimal.addEventListener("click", () => {
-    addNumber(decimal)
+    
+    // let's check to make sure there isn't already a decimal in the display div
+
+    let displayAtClick = display.textContent
+    
+    if (displayAtClick.includes('.')) {
+        // we do nothing if the decimal is already there
+        
+    } else {
+        addNumber(decimal)
+    }
 })
+
+// Need to check if the string already has a decimal and if it does not act
 
 function addNumber(numToAdd) {
     let valueToAdd = numToAdd.textContent

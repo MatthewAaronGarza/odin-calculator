@@ -7,6 +7,11 @@ we're made a calculator using HTML, CSS, and Javascript!
 
 Todo list ⭐ 
 
+Update style
+- give the calculator some style. Make the background more appealing. 
+- when operator button has been pressed change the color of it to give the user an idea
+of the button actually being pressed.
+- when the number button has been pressed change the color of it to give the user an idea of the button actually being pressed.
 
 Known bugs: 
 - digits overflow off the display div when length of the number is very large
